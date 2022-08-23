@@ -9,7 +9,11 @@ def main():
     # Algoritmo
     lavados = lavados_con(tiempos, incompatibilidades)
 
-    # Salida
+
+    f = open("respuesta", "w+")
+    for lavado, prendas in lavados.items():
+        for prenda in prendas:
+            f.write(f"{lavado} {prenda}\n")
 
 
 if __name__ == '__main__':
