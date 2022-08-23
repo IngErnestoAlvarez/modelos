@@ -13,7 +13,7 @@ def main():
     f = open("respuesta", "w+")
     for lavado, prendas in lavados.items():
         for prenda in prendas:
-            f.write(f"{lavado} {prenda}\n")
+            f.write(f"{prenda} {lavado}\n")
 
 
 if __name__ == '__main__':
