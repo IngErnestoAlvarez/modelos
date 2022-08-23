@@ -1,10 +1,5 @@
-from typing import Dict
-
+from algoritmo import lavados_con
 from parsear import parsear_archivo
-
-
-def lavados_con(tiempos, incompatibilidades):
-    pass
 
 
 def main():

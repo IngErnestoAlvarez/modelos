@@ -1,3 +1,6 @@
+from typing import Dict
+
+
 def parsear_archivo():
     tiempos = {}
     incompatibilidades = {}
@@ -22,11 +25,8 @@ def comando_e(args, _tiempos, incompatibilidades: Dict[object, list]):
     prenda1, prenda2 = args
     if prenda1 not in incompatibilidades:
         incompatibilidades.setdefault(prenda1, [])
-    if prenda2 not in incompatibilidades:
-        incompatibilidades.setdefault(prenda2, [])
 
     incompatibilidades[prenda1].append(prenda2)
-    incompatibilidades[prenda2].append(prenda1)
 
     print(f"{prenda1} es incompatible con {prenda2}")
 
