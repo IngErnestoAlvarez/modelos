@@ -1,0 +1,4 @@
+En principio pensé que era sencillo. Una solución de estilo greedy, que fue lo que hice posteriormente, me hizo pensar que era suficiente.
+No tengo noción de cómo continuar a partir de ahora para mejorar mi solución, se me ocurrió hacer algo más por fuerza bruta pero asumo que en un futuro
+cercano no será posible. Tengo un contraejemplo que demuestra por qué la solución Greedy que entregué como solución no es óptima. Aún asi no sé
+cómo continuar para mejorarla
