@@ -1,13 +1,15 @@
-from algoritmo import lavados_con
+from sys import argv
+from algoritmo import lavados_con_algo_1
 from parsear import parsear_archivo
 
 
 def main():
     # Parsear archivo
-    tiempos, incompatibilidades = parsear_archivo()
+
+    tiempos, incompatibilidades = parsear_archivo(argv[1])
 
     # Algoritmo
-    lavados = lavados_con(tiempos, incompatibilidades)
+    lavados = lavados_con_algo_1(tiempos, incompatibilidades)
 
     f = open("respuesta", "w+")
     for lavado, prendas in lavados.items():

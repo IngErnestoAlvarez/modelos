@@ -1,4 +1,4 @@
-def lavados_con(tiempos, incompatibilidades):
+def lavados_con_algo_1(tiempos, incompatibilidades: dict):
     tiempos_ordenados = {k: v for k, v in sorted(tiempos.items(), key=lambda item: -item[1])}
     resultado = {}
 
@@ -8,7 +8,7 @@ def lavados_con(tiempos, incompatibilidades):
         while not entro:
             puede = True
             for prenda_del_lavado in resultado.setdefault(numero_de_lavado, []):
-                if prenda_del_lavado in incompatibilidades[prenda]:
+                if prenda in incompatibilidades and prenda_del_lavado in incompatibilidades[prenda]:
                     puede = False
                     break
             if puede:

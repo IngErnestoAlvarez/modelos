@@ -1,10 +1,10 @@
 from typing import Dict
 
 
-def parsear_archivo():
+def parsear_archivo(archivo):
     tiempos = {}
     incompatibilidades = {}
-    f = open("primer_problema.txt", "r")
+    f = open(archivo, "r")
     for linea in f.readlines():
         linea = linea.strip()
         comando, *args = linea.split(" ")
@@ -28,6 +28,10 @@ def comando_e(args, _tiempos, incompatibilidades: Dict[object, list]):
 
     incompatibilidades[prenda1].append(prenda2)
 
+    if prenda2 not in incompatibilidades:
+        incompatibilidades.setdefault(prenda2, [])
+
+    incompatibilidades[prenda2].append(prenda1)
     print(f"{prenda1} es incompatible con {prenda2}")
 
 
