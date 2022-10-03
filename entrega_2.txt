@@ -1,0 +1,3 @@
+Para la segunda entrega no he cambiado el código. Sigo manteniendo la heurística del paso anterior de ordenar por ropa de mayor tiempo. 
+Se mantiene el código por la falta de conocimiento en cómo proseguir para mejorar la solución. 
+Se están haciendo investigaciones para ver como optimizar. Por el momento no se encontró nada.
