@@ -35,6 +35,10 @@ mt_j <= M . lavado_j ; para todo lavado j.
 
 mt_j >= T_i * ropa_ij ; para toda ropa i y lavado j.
 
+### Una ropa en un solo lavado
+
+∑j ropa_ij = 1 : para toda ropa i. (j son los lavados)
+
 ## Funcional
 
 min Z = ∑ mt_j ; siendo j desde 1 hasta m (siendo m la cantidad de lavados)
