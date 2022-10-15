@@ -6,11 +6,14 @@ Determinar la cantidad de lavados y la ropa que contiene cada uno para minimizar
 
 ## Constantes
 T_i: Tiempo de la ropa i-esima en lavarse
+
 M: Lavado muy grande
 
 ## Variables
 ***ropa_ij***: Es 1 si la ropa i-esima entra en el lavado j-esimo; 0 si no.
+
 ***lavado_j***: Es 1 si el lavado j-esimo efectivamente es un lavado real.
+
 ***mt_j***: Es el mayor tiempo del lavado j-esimo.
 
 ## Modelo
@@ -29,6 +32,7 @@ ropa_xj + ropa_yj <= 1 ; para todo lavado j.
 ### Tiempo maximo de lavado
 
 mt_j <= M . lavado_j ; para todo lavado j.
+
 mt_j >= T_i * ropa_ij ; para toda ropa i y lavado j.
 
 ## Funcional
